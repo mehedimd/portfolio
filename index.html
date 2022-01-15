@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehedi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header" id="headerId"> 
+        <a href="#" class="active">MEHEDI HASAN</a>
+        <nav>
+            <a href="https://www.facebook.com/profile.php?id=100014888353793" target="_blank">FACEBOOK</a>
+            <a href="https://www.instagram.com/developer_mehedi/" target="_blank">INSTAGRAM</a>
+            <a href="https://twitter.com/MDMEHED21329325" target="_blank">TWITEER</a>
+            <a href="https://github.com/mehedimd/mehedi" target="_blank">GITHUB</a>
+            <a href="https://github.com/mehedimd/mehedi" target="_blank">PROJECTS</a>
+
+        </nav>
+        <span class="icon" ><i class='bx bx-menu' onclick="myFunction()"></i></span>
+    </header>
+    <section class="img-gellary">
+        <div class="img1">
+            <img src="me3.png" alt="">
+        </div>
+        <div class="img2">
+            <img src="me1.png" alt="">
+        </div>
+        <div class="img3">
+            <img src="r1.png" alt="">
+        </div>
+        <div class="img4">
+            <img src="me4.png" alt="">
+        </div>
+    </section>
+
+    <script>
+        function myFunction(){
+        var x = document.querySelector("#headerId");
+        if(x.className === "header"){
+            x.className += " responsive";
+        }
+        else{
+            x.className = "header";
+        }
+       }
+    </script>
+</body>
+</html>
