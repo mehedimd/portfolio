@@ -171,6 +171,8 @@ display: flex;
     .my-form{
         padding: 25px;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
     .my-form .form-div{
         width: 30%;
@@ -211,9 +213,59 @@ display: flex;
         color:black;
         border: 1px solid gray;
     }
+    /*form div 2*/
+    .my-form .form-div2{
+        width: 30%;
+        padding: 16px;
+        background-color: #fff;
+        color: black;
+        border: 1px solid rgb(167, 167, 167);
+    }
+    .my-form .form-div2 h2{
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 255, 255), 0 0 5px darkblue;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .my-form .form-div2 input{
+        width: 100%;
+        height: 30px;
+        border: none;
+        border-bottom:1px solid gray;
+        padding: 2px 8px;
+        margin-top: 5px;
+    }
+    .my-form .form-div2 textarea{
+        width: 100%;
+        height: auto;
+        padding: 2px 8px;
+        border:none;
+        margin-top: 5px;
+        border-bottom:1px solid gray;
+    }
+
+    #btn-form2{
+        background-color: rgb(54, 58, 250);
+        border: none;
+        color: white;
+    }
+    #btn-form2:hover{
+        background-color: rgb(255, 255, 255);
+        color:black;
+        border: 1px solid gray;
+    }
+
     @media only screen and (max-width:768px){
+        .my-form{
+            flex-direction: column-reverse;
+        }
         .my-form .form-div{
             width: 100%;
+            
+        }
+        .my-form .form-div2{
+            width: 100%;
+            margin-bottom: 8px;
         }
     }
 /*---------end form section---------*/
