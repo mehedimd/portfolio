@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@700&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@200&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@200&family=Roboto&family=Roboto+Condensed:wght@300&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     text-decoration: none;
@@ -12,7 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 0px 50px;
-    background-color: rgb(48, 48, 43);
+    background-color: rgb(255, 255, 255);
     height: 60px;
     align-items: center;
    
@@ -21,13 +23,14 @@ header{
 header a{
     padding: 8px 12px;
     font-size: 14PX;
-    color: rgb(255, 255, 255);
+    color: black;
+    font-family: 'Roboto', sans-serif;
     
 
 }
 header .active{
-    background-color:#00b32d;
-    color: white;
+
+    color: #00b32d;
 
 }
 header a:hover:not(.active){
@@ -37,7 +40,7 @@ header a:hover:not(.active){
 .icon{
     display: none;
     font-size: 30px;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 @media only screen and (max-width:720px){
     header nav {
@@ -56,12 +59,14 @@ header a:hover:not(.active){
         display: block;
         position: absolute;
         top: 60px;
+        right: 50px;
     }
     .header.responsive a{
         display: block;
     }
     .header.responsive nav a{
-        background-color: rgb(48, 48, 43);
+        background-color: rgb(255, 255, 255);
+        
     }
     .header.responsive nav a:hover{
         background-color: black;
@@ -71,6 +76,9 @@ header a:hover:not(.active){
 @media only screen and (max-width:413px){
     header {
         padding:0px 5px;
+    }
+    .header.responsive nav{
+        right: 5px;
     }
 }
 /*-----end header section__*/
