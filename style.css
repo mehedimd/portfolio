@@ -168,51 +168,6 @@ display: flex;
 }
 /*-----end unknown section-------*/
 /*--------form section-------*/
-    .my-form{
-        padding: 25px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    .my-form .form-div{
-        width: 30%;
-        padding: 16px;
-        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-        color: white;
-        border: 1px solid rgb(167, 167, 167);
-    }
-    .my-form .form-div h2{
-        color: rgb(252, 76, 76);
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-        text-align: center;
-        margin-bottom: 12px;
-    }
-    .my-form .form-div input{
-        width: 100%;
-        height: 30px;
-        border:none;
-        border-radius: 8px;
-        padding: 2px 8px;
-        margin-top: 5px;
-    }
-    .my-form .form-div textarea{
-        width: 100%;
-        height: auto;
-        padding: 2px 8px;
-        border:none;
-        margin-top: 5px;
-    }
-
-    #btn-form{
-        background-color: rgb(85, 87, 233);
-        border: none;
-        color: white;
-    }
-    #btn-form:hover{
-        background-color: rgb(255, 255, 255);
-        color:black;
-        border: 1px solid gray;
-    }
     /*form div 2*/
     .my-form .form-div2{
         width: 30%;
@@ -256,13 +211,7 @@ display: flex;
     }
 
     @media only screen and (max-width:768px){
-        .my-form{
-            flex-direction: column-reverse;
-        }
-        .my-form .form-div{
-            width: 100%;
-            
-        }
+
         .my-form .form-div2{
             width: 100%;
             margin-bottom: 8px;
@@ -270,31 +219,65 @@ display: flex;
     }
 /*---------end form section---------*/
 /*-------img-gellary section------*/
+/* Image gellary */
 .img-gellary{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 25px;
-    
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
-.img-gellary .img1, .img2, .img3, .img4 {
-    border: 1px solid rgb(228, 220, 220);
-    width: 20%;
-    overflow: hidden;
-    margin-bottom: 8px;
+.img-gellary .title{
+    text-align: center;
+    font-size: 25px;
 
 }
-.img-gellary img{
+.img-gellary .container{
     width: 100%;
-    height: 100%;
-    padding: 8px;
-    
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(3, 420px);
+    overflow: hidden;
+    gap: 25px;
+    padding: 50px 100px;
+
 }
-@media only screen and (max-width:720px){
-    .img-gellary{
-        flex-direction: column;
-    }
-    .img-gellary .img1, .img2, .img3, .img4{
-        width:100%;
-    }
+.img-gellary .container div{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 20px;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+
+}
+
+.img-gellary .container div img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+}
+
+.img-gellary .container div:hover{
+    padding: 0px;
+}
+
+@media only screen and (max-width:1050px){
+    .img-gellary .container{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows: repeat(5, 400px);
+        overflow: hidden;
+        gap: 25px;
+        padding: 0px 100px;
+    } 
+}
+@media only screen and (max-width:500px){
+    .img-gellary .container{
+
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows: repeat(9, 400px);
+
+    } 
+}
+@media only screen and (max-width:767px){
+    .img-gellary .container{
+        padding: 0px 25px;
+    } 
 }
