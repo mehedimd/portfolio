@@ -278,6 +278,6 @@ display: flex;
 }
 @media only screen and (max-width:767px){
     .img-gellary .container{
-        padding: 0px 25px;
+        padding: 30px 25px;
     } 
 }
