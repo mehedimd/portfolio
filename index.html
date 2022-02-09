@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <section class="" id="sticky">
     <header class="header" id="headerId"> 
         <a href="#" class="active">MEHEDI <span style="color: red; font-size:10px;">HASAN</span></a>
         <nav>
@@ -21,6 +22,7 @@
         </nav>
         <span class="icon" ><i class='bx bx-menu' onclick="myFunction()"></i></span>
     </header>
+</section>
     <!-- End Header section -->
     <!---start unknown section-->
     <section class="unknown">
@@ -124,7 +126,7 @@
         // navbar sticky
         window.onscroll = function() {stickyFunction()};
 
-        var navbar = document.getElementById("headerId");
+        var navbar = document.getElementById("sticky");
         var sticky = navbar.offsetTop;
 
         function stickyFunction() {
