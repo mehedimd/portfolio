@@ -7,6 +7,13 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+   /* -------sticky navbar code-- */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  /* -------sticky navbar code end-- */
 a{
     text-decoration: none;
 }
@@ -26,6 +33,7 @@ header a{
     color: black;
     font-family: 'Roboto', sans-serif;
     transition: .2s;
+    overflow: hidden;
     
 
 }
@@ -87,6 +95,7 @@ header a:hover:not(.active){
 width: 100%;
 height: 250px;
 display: flex;
+margin-top: 60px;
 }
 .unknown .left-item{
     width: 20%;
@@ -261,6 +270,16 @@ display: flex;
     font-weight: lighter;
     
 }
+#things .title h1{
+    text-align: center;
+    color: #00b32dce;
+    font-weight: bolder;
+    
+
+}
+#things {
+    padding: 20px 0px;
+}
 @media only screen and (max-width:900px){
     .main-things{
         padding: 50px 25px;
@@ -276,4 +295,5 @@ display: flex;
         margin: auto;
         margin-bottom: 16px;
     }  
+
 }

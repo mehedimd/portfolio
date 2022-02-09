@@ -85,6 +85,7 @@
 
         <section id="things">
             <div class="container">
+                    <div class="title"><h1>Things I Love</h1></div>
                 <div class="main-things">
                     <div class="html">
                         <div class="logo">
@@ -120,6 +121,21 @@
         </section>
 
     <script>
+        // navbar sticky
+        window.onscroll = function() {stickyFunction()};
+
+        var navbar = document.getElementById("headerId");
+        var sticky = navbar.offsetTop;
+
+        function stickyFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+        }
+
+        //navbar sticky section end
         function myFunction(){
         var x = document.querySelector("#headerId");
         if(x.className === "header"){
