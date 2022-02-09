@@ -131,7 +131,7 @@ display: flex;
 .unknown .right-item{
     width: 80%;
     height: 100%;
-    background-color: rgb(104, 104, 102);
+    background-color: #00b32d9a;
     
 }
 .unknown .right-item .content .emoji{
@@ -169,7 +169,7 @@ display: flex;
 /*-----end unknown section-------*/
 /*--------form section-------*/
     /*form div 2*/
-    .my-form .form-div2{
+    /* .my-form .form-div2{
         width: 30%;
         padding: 16px;
         background-color: #fff;
@@ -216,68 +216,64 @@ display: flex;
             width: 100%;
             margin-bottom: 8px;
         }
-    }
+    } */
 /*---------end form section---------*/
 /*-------img-gellary section------*/
 /* Image gellary */
-.img-gellary{
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-.img-gellary .title{
-    text-align: center;
-    font-size: 25px;
-
-}
-.img-gellary .container{
-    width: 100%;
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-rows: repeat(3, 420px);
-    overflow: hidden;
-    gap: 25px;
+/* 
+/* //Things SEction */
+.main-things{
+    display: flex;
     padding: 50px 100px;
-
-}
-.img-gellary .container div{
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    padding: 20px;
-    overflow: hidden;
-    transition: all .5s ease-in-out;
-
+    justify-content: space-around;
+    gap: 30px;
+    text-align: center;
 }
 
-.img-gellary .container div img{
-    height: 100%;
-    width: 100%;
-    object-fit:cover;
-    object-position: center;
+#things .html, .javascript, .creative-coading{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 25px 15px;
+    width: 300px;
+    border-radius: 16px;
 }
-
-.img-gellary .container div:hover{
-    padding: 0px;
+#things .logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #00b32dce;
 }
-
-@media only screen and (max-width:1050px){
-    .img-gellary .container{
-        display: grid;
-        grid-template-columns:repeat(2, 1fr);
-        grid-template-rows: repeat(5, 400px);
-        overflow: hidden;
-        gap: 25px;
-        padding: 0px 100px;
-    } 
+#things .logo i{
+    margin: auto;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
 }
-@media only screen and (max-width:500px){
-    .img-gellary .container{
-
-        grid-template-columns:repeat(1, 1fr);
-        grid-template-rows: repeat(9, 400px);
-
-    } 
+.main-things h2{
+    margin: 20px 0px;
+    color: #00b32dce;
+}  
+.main-things .desc{
+    font-size:smaller;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    
+}
+@media only screen and (max-width:900px){
+    .main-things{
+        padding: 50px 25px;
+    }
 }
 @media only screen and (max-width:767px){
-    .img-gellary .container{
-        padding: 30px 25px;
-    } 
+    .main-things{
+        flex-direction: column;
+        gap: 0;
+    }
+    #things .html, .javascript, .creative-coading{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 16px;
+    }  
 }
