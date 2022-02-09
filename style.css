@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@700&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@200&family=Roboto+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@200&family=Roboto&family=Roboto+Condensed:wght@300&display=swap');
+
+/* ------------my skill section */
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,900);
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +15,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    
+    overflow: hidden;
+    z-index: 5;
   }
 
   /* -------sticky navbar code end-- */
@@ -256,7 +260,7 @@ margin-top: 60px;
 /* //Things SEction */
 .main-things{
     display: flex;
-    padding: 50px 100px;
+    padding: 50px 100px 0px 100px;
     justify-content: space-around;
     gap: 30px;
     text-align: center;
@@ -305,7 +309,7 @@ margin-top: 60px;
 }
 @media only screen and (max-width:900px){
     .main-things{
-        padding: 50px 25px;
+        padding: 50px 25px 0px 25px;
     }
 }
 @media only screen and (max-width:767px){
@@ -320,3 +324,85 @@ margin-top: 60px;
     }  
 
 }
+
+/* ------------my skill section */
+.skill .skill-title{
+    text-align: center;
+    color: #00b32d;
+}
+  .skill .container {
+    width: 100%;
+    margin:30px auto;
+    font-family: 'Arial';
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .circle_percent {
+    font-size:120px;
+    width:1em;
+    height:1em;
+    position: relative;
+    background: #eee;
+    border-radius:50%;
+    overflow:hidden;
+    display:inline-block;
+    margin:20px;
+  }
+  .circle_inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1em;
+    height: 1em;
+    clip:rect(0 1em 1em .5em);
+  }
+  .round_per {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1em;
+    height: 1em;
+    background: #4527A0;
+    clip:rect(0 1em 1em .5em);
+    transform:rotate(180deg);
+    transition:1.05s;
+  }
+  .percent_more .circle_inner {
+    clip:rect(0 .5em 1em 0em);
+  }
+  .percent_more:after {
+    position: absolute;
+    left: .5em;
+    top:0em;
+    right: 0;
+    bottom: 0;
+    background: #4527A0;
+    content:'';
+  }
+  .circle_inbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: #fff;
+    z-index:3;
+    border-radius: 50%;
+  }
+  .percent_text {
+    position: absolute;
+    font-size: 36px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+  }
+
+  @media only screen and (max-width:767px){
+      .skill .container{
+          flex-wrap: wrap;
+         
+      }
+  }

@@ -127,44 +127,54 @@
             </div>
         </section>
 
-    <script>
-        // navbar sticky
-        window.onscroll = function() {stickyFunction()};
+        <!-- my-skill -->
 
-        var navbar = document.getElementById("sticky");
-        var sticky = navbar.offsetTop;
+        <section class="skill">
+            <div class="skill-title">
+                <h1>My Skills</h1>
+            </div>
+            <div class="container">
+  
+                <div class="x">
+                    <div class="circle_percent" data-percent="95">
+                        <div class="circle_inner">
+                            <div class="round_per">
+                          </div>
+                      </div>
+                  </div>
+                  <h2>HTML</h2>
+                </div>
+                <div class="x">
+                    <div class="circle_percent" data-percent="90">
+                        <div class="circle_inner">
+                            <div class="round_per">
+                          </div>
+                      </div>
+                  </div>
+                  <h2>CSS</h2>
+                </div>
+                <div class="x">
+                    <div class="circle_percent" data-percent="80">
+                        <div class="circle_inner">
+                            <div class="round_per">
+                          </div>
+                      </div>
+                  </div>
+                  <h2>BOOTSTRAP</h2>
+                </div>
+                <div class="x">
+                    <div class="circle_percent" data-percent="80">
+                        <div class="circle_inner">
+                            <div class="round_per">
+                          </div>
+                      </div>
+                  </div>
+                  <h2>JAVASCRIPT</h2>
+                </div>
+          </div>
+        </section>
 
-        function stickyFunction() {
-        if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-        } else {
-        navbar.classList.remove("sticky");
-        }
-        }
-
-        //navbar sticky section end
-
-
-        function myFunction(){
-        var x = document.querySelector("#headerId");
-        if(x.className === "header"){
-            x.className += " responsive";
-
-            console.log(x.className);
-        }
-        else{
-            x.className = "header";
-        }
-       }
-       function bodyClick(){
-        let x = document.querySelector("#headerId");
-        if(x.classList[1] == "responsive"){
-            x.className = "header"
-       }
-       else{
-           console.log("not responsive")
-       }
-    }
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="index.js"></script>
 </body>
 </html>
