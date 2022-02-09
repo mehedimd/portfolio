@@ -16,11 +16,10 @@
 
 
       function myFunction(){
-      var x = document.querySelector("#headerId");
+      let x = document.querySelector("#headerId");
       if(x.className === "header"){
           x.className += " responsive";
-
-          console.log(x.className);
+          console.log("x")
       }
       else{
           x.className = "header";
@@ -30,6 +29,7 @@
       let x = document.querySelector("#headerId");
       if(x.classList[1] == "responsive"){
           x.className = "header"
+          
      }
      else{
          console.log("not responsive")
