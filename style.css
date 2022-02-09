@@ -100,7 +100,7 @@ margin-top: 60px;
 .unknown .left-item{
     width: 20%;
     height: 100%;
-    background-color: rgb(224, 219, 219);
+    background-color: #00b32dce;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,28 +125,29 @@ margin-top: 60px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     margin-top: 16px;
+    color: white;
     
 }
 .unknown .left-item .img-content i{
     padding: 8px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 25px;
 }
 .unknown .left-item .img-content i:hover{
-    background-color: #fff;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
 }
 .unknown .right-item{
     width: 80%;
     height: 100%;
-    background-color: #00b32d9a;
+    background-color: rgba(0, 0, 0, 0.788);
     
 }
 .unknown .right-item .content .emoji{
     font-size: 100px;
     display: inline-block;
-    color: yellow;
+    color: #00b32d;
 }
 .unknown .right-item .content{
     text-align: center;
@@ -270,15 +271,19 @@ margin-top: 60px;
     font-weight: lighter;
     
 }
-#things .title h1{
+#things .title {
     text-align: center;
     color: #00b32dce;
     font-weight: bolder;
-    
+} 
 
-}
+
+
+
+
 #things {
     padding: 20px 0px;
+    margin: auto;
 }
 @media only screen and (max-width:900px){
     .main-things{
