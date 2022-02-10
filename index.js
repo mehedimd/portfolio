@@ -19,7 +19,9 @@
       let x = document.querySelector("#headerId");
       if(x.className === "header"){
           x.className += " responsive";
-          console.log("x")
+          console.log("x");
+          const element = document.querySelector('#navIdForAnnimation');
+          element.classList.add('animate__animated', 'animate__backInRight');
       }
       else{
           x.className = "header";

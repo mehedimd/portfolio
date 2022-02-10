@@ -69,10 +69,12 @@ header a:hover:not(.active){
         position: relative;
     }
     .header.responsive nav{
+        
         display: block;
         position: absolute;
         top: 60px;
-        right: 50px;
+        right: 0px;
+        width: 200px;
     }
     .header.responsive a{
         display: block;
@@ -91,7 +93,7 @@ header a:hover:not(.active){
         padding:0px 5px;
     }
     .header.responsive nav{
-        right: 5px;
+        width: 120px;
     }
 }
 /*-----end header section__*/
