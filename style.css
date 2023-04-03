@@ -99,65 +99,71 @@ header a:hover:not(.active){
     }
 }
 /*-----end header section__*/
-/*---------start unknown section))))_-----*/
-.unknown{
+/*---------start mySelf section))))_-----*/
+.mySelf{
 width: 100%;
 height: 250px;
 display: flex;
 padding-top: 60px;
 
+
 }
-.unknown .left-item{
+.mySelf .left-item{
     width: 20%;
     height: 100%;
     background-color: dodgerblue;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 8px;
     
     
 }
-.unknown .left-item .img{
+.mySelf .left-item .img{
     width: 100px;
     height: 100px;
     overflow: hidden;
     margin-top:16px;
     
     
+    
 }
-.unknown .left-item .img img{
+.mySelf .left-item .img img{
     width: 100%;
     height: 100%;
-    border-radius: 30%;
+    border-radius: 8%;
     object-fit: cover;
+    
+    
 }
-.unknown .left-item .img-content{
+.mySelf .left-item .img-content{
     font-family: 'Oswald', sans-serif;
     text-align: center;
     margin-top: 16px;
     color: white;
     
 }
-.unknown .left-item .img-content i{
+.mySelf .left-item .img-content i{
     padding: 8px;
     background-color: white;
     color: black;
     border-radius: 25px;
 }
-.unknown .left-item .img-content i:hover{
+.mySelf .left-item .img-content i:hover{
     background-color: rgba(0, 0, 0, 0.438);
     color: white;
 }
-.unknown .right-item{
+.mySelf .right-item{
     width: 80%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.788);
     display: flex;
     align-items: center;
     
+    
 }
 
-.unknown .right-item .content{
+.mySelf .right-item .content{
     color: white;
     margin-top: 5px;
     padding: 25px 0px 25px 50px;
@@ -167,45 +173,45 @@ padding-top: 60px;
     
 }
 
-.unknown .right-item .content .name{
+.mySelf .right-item .content .name{
     font-size: 39px;
     font-weight: bold;
 }
 @media only screen and (max-width:850px){
-    .unknown{
+    .mySelf{
         flex-direction: column;
         height: auto;
     }
-    .unknown .left-item{
+    .mySelf .left-item{
         width: 100%;
         padding: 16px 0px;
     }
-    .unknown .right-item{
+    .mySelf .right-item{
         width: 100%;
     }
-    .unknown .left-item .img{
+    .mySelf .left-item .img{
         width: 150px;
         height: 150px;
     }
-    .unknown .right-item{
+    .mySelf .right-item{
         padding-bottom: 10px;
     }
-    .unknown .right-item .content{
+    .mySelf .right-item .content{
         text-align: center;
         margin: auto;
     }
 }
 @media only screen and (max-width:575px){
-    .unknown .right-item .content .name{
+    .mySelf .right-item .content .name{
         font-size: 20px;
         font-weight: bold;
     }
-    .unknown .right-item .content{
+    .mySelf .right-item .content{
         padding: 25px;
         line-height: 25px;
     }
 }
-/*-----end unknown section-------*/
+/*-----end mySelf section-------*/
 /*--------form section-------*/
     /*form div 2*/
     /* .my-form .form-div2{
@@ -304,6 +310,8 @@ padding-top: 60px;
     text-align: center;
     color: dodgerblue;
     font-weight: bolder;
+    margin: auto;
+    width: 50%;
 } 
 
 #things {
@@ -332,6 +340,8 @@ padding-top: 60px;
 .skill .skill-title{
     text-align: center;
     color: dodgerblue;
+    margin: auto;
+    width: 50%;
 }
   .skill .container {
     width: 100%;
